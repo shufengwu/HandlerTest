@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +9,38 @@
         android:id="@+id/btnShowToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="弹出Toast"
-        android:layout_centerInParent="true"/>
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnTestPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnShowToast"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="测试post"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnTestMyLooper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTestPost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="测试myLooper"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="指数：0"
+        android:textColor="#000000" />
 
 </RelativeLayout>
